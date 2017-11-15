@@ -36,8 +36,7 @@ histogram(~`Total Steps`, data=sum_step, col = "grey")
 <br>
 
 ###3. Mean and median number of steps taken each day\
-#####Mean of the total steps taken per day: `r format(round(mean(sum_step[,2]),3), scientific = F)`
-
+#####Mean of the total steps taken per day: `r format(round(mean(sum_step[,2]),3), scientific = F)`\
 #####Median of the total steps taken per day: `r format(median(sum_step[,2]), scientific = F)`
 
 <br>
@@ -55,7 +54,7 @@ xyplot(`Average Steps` ~ Interval, data = mean_step, type = "l")
 
 <br>
 
-###5. The 5-minute interval that, on average, contains the maximum number of steps
+###5. The 5-minute interval that, on average, contains the maximum number of steps\
 #####The interval `r mean_step[which(mean_step[,2] == max(mean_step[,2])),1]` contains the maximum number of `r round(mean_step[which(mean_step[,2] == max(mean_step[,2])),2], 2)` (average) steps
 
 <br>
@@ -82,9 +81,9 @@ histogram(~`New Total Steps`, data=sum_step_new, col = "grey")
 ```
 
 #####\   
-#####Mean of the total steps taken per day: `r format(round(mean(sum_step_new[,2]),3), scientific = F)`
-#####Median of the total steps taken per day: `r format(median(sum_step_new[,2]), scientific = F)`
-#####Mean is the same, while median is different. The histogram looks more normalized
+#####Mean of the total steps taken per day: `r format(round(mean(sum_step_new[,2]),3), scientific = F)`\
+#####Median of the total steps taken per day: `r format(median(sum_step_new[,2]), scientific = F)`\
+#####Mean is the same, while median is different. The histogram looks more normalized\
 
 <br>
 
