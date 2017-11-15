@@ -63,9 +63,9 @@ xyplot(`Average Steps` ~ Interval, data = mean_step, type = "l")
 ## Imputing missing values
 
 ###6. Code to describe and show a strategy for imputing missing data\
-#####`r sum(is.na(activity))` missing values\
+#####`r sum(is.na(activity))` missing values
 
-#####Use mean of the 5-minite interval to replace missing values\
+#####Use mean of the 5-minite interval to replace missing values
 
 <br>
 
@@ -80,10 +80,10 @@ names(sum_step_new) <- c("Date", "New Total Steps")
 histogram(~`New Total Steps`, data=sum_step_new, col = "grey")
 ```
 
-#####\   
+##### \   
 #####Mean of the total steps taken per day: `r format(round(mean(sum_step_new[,2]),3), scientific = F)`\
 #####Median of the total steps taken per day: `r format(median(sum_step_new[,2]), scientific = F)`\
-#####Mean is the same, while median is different. The histogram looks more normalized\
+#####Mean is the same, while median is different. The histogram looks more normalized
 
 <br>
 
