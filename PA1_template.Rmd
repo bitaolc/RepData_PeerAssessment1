@@ -16,7 +16,7 @@ library(lattice)
 
 ###1. Code for reading in the dataset and/or processing the data
 ```{r read_data}
-data_raw <- read.csv("D:/Folder/Coursera/R/Reproducible Research/week2/activity.csv", sep = ",", stringsAsFactors = F, header = T)
+data_raw <- read.csv("https://github.com/bitaolc/RepData_PeerAssessment1/blob/master/activity.csv", sep = ",", stringsAsFactors = F, header = T)
 activity <- data_raw[,c("date","interval","steps")]
 ```
 
