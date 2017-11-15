@@ -80,7 +80,7 @@ names(sum_step_new) <- c("Date", "New Total Steps")
 histogram(~`New Total Steps`, data=sum_step_new, col = "grey")
 ```
 
-##### \   
+##### 
 #####Mean of the total steps taken per day: `r format(round(mean(sum_step_new[,2]),3), scientific = F)`\
 #####Median of the total steps taken per day: `r format(median(sum_step_new[,2]), scientific = F)`\
 #####Mean is the same, while median is different. The histogram looks more normalized
