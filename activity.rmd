@@ -72,4 +72,6 @@ mean_step_new <- aggregate(activity_sub5[3], by = list(activity_sub5$interval, a
 names(mean_step_new) <- c("Interval","Day","Average steps")
 xyplot(`Average steps` ~ Interval |as.factor(Day), data = mean_step_new, type = "l")
 ```
+###https://github.com/bitaolc/RepData_PeerAssessment1
+
 
