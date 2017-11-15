@@ -74,4 +74,4 @@ xyplot(`Average steps` ~ Interval |as.factor(Day), data = mean_step_new, type = 
 ```
 ###https://github.com/bitaolc/RepData_PeerAssessment1
 
-
+###589a43e0172d808c7c7637037e93d9353ede47fc
