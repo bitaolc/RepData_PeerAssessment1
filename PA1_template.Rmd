@@ -32,7 +32,9 @@ print(histogram(~`Total Steps`, data=sum_step, col = "grey", breaks = 20))
 <br>
 
 ###3. Mean and median number of steps taken each day
+
 #####Mean of the total steps taken per day: `r format(round(mean(sum_step[,2]),3), scientific = F)`
+
 #####Median of the total steps taken per day: `r format(median(sum_step[,2]), scientific = F)`
 
 <br>
