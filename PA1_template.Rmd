@@ -50,11 +50,13 @@ print(xyplot(`Average Steps` ~ Interval, data = mean_step, type = "l"))
 <br>
 
 ###5. The 5-minute interval that, on average, contains the maximum number of steps
+
 #####The interval `r mean_step[which(mean_step[,2] == max(mean_step[,2])),1]` contains the maximum number of `r round(mean_step[which(mean_step[,2] == max(mean_step[,2])),2], 2)` (average) steps
 
 <br>
 
 ###6. Code to describe and show a strategy for imputing missing data
+
 #####`r sum(is.na(activity))` missing values
 
 #####Use mean of the 5-minite interval to replace missing values
@@ -74,7 +76,9 @@ print(histogram(~`New Total Steps`, data=sum_step_new, col = "grey", breaks = 20
 <br>
 
 #####Mean of the total steps taken per day: `r format(round(mean(sum_step_new[,2]),3), scientific = F)`
+
 #####Median of the total steps taken per day: `r format(median(sum_step_new[,2]), scientific = F)`
+
 #####Mean is the same, while median is different. The histogram looks more normalized
 
 <br>
