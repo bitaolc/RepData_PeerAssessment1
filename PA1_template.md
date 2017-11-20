@@ -20,7 +20,7 @@ activity_sub1 <- activity[!is.na(activity$steps),-2]
 sum_step <- aggregate(activity_sub1[,-1], by=list(activity_sub1$date), FUN = 'sum')
 names(sum_step) <- c("Date", "Total Steps")
 
-print(histogram(~`Total Steps`, data=sum_step, col = "grey", breaks = 20))
+histogram(~`Total Steps`, data=sum_step, col = "grey", breaks = 20)
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
@@ -38,7 +38,7 @@ print(histogram(~`Total Steps`, data=sum_step, col = "grey", breaks = 20))
 activity_sub2 <- activity[!is.na(activity$steps),-1]
 mean_step <- aggregate(activity_sub2[,-1], by=list(activity_sub2$interval), FUN = 'mean')
 names(mean_step) <- c("Interval", "Average Steps")
-print(xyplot(`Average Steps` ~ Interval, data = mean_step, type = "l"))
+xyplot(`Average Steps` ~ Interval, data = mean_step, type = "l")
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
@@ -66,7 +66,7 @@ activity_sub4 <- rbind(merge(activity_sub3, mean_step, all = T), activity[!is.na
 sum_step_new <- aggregate(activity_sub4[3], by = list(activity_sub4$date), FUN = "sum")
 names(sum_step_new) <- c("Date", "New Total Steps")
 
-print(histogram(~`New Total Steps`, data=sum_step_new, col = "grey", breaks = 20))
+histogram(~`New Total Steps`, data=sum_step_new, col = "grey", breaks = 20)
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
@@ -89,7 +89,7 @@ activity_sub5$day <- as.factor(activity_sub5$day)
 
 mean_step_new <- aggregate(activity_sub5[3], by = list(activity_sub5$interval, activity_sub5$day), FUN = "mean")
 names(mean_step_new) <- c("Interval","Day","Average steps")
-print(xyplot(`Average steps` ~ Interval |as.factor(Day), data = mean_step_new, type = "l", layout=c(1,NA)))
+xyplot(`Average steps` ~ Interval |as.factor(Day), data = mean_step_new, type = "l", layout=c(1,NA))
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
