@@ -27,7 +27,9 @@ histogram(~`Total Steps`, data=sum_step, col = "grey", breaks = 20)
 <br>
 
 ###3. Mean and median number of steps taken each day
+
 #####Mean of the total steps taken per day: 10766.19
+
 #####Median of the total steps taken per day: 10765
 
 <br>
@@ -46,11 +48,13 @@ xyplot(`Average Steps` ~ Interval, data = mean_step, type = "l")
 <br>
 
 ###5. The 5-minute interval that, on average, contains the maximum number of steps
+
 #####The interval 835 contains the maximum number of 206.17 (average) steps
 
 <br>
 
 ###6. Code to describe and show a strategy for imputing missing data
+
 #####2304 missing values
 
 #####Use mean of the 5-minite interval to replace missing values
@@ -73,7 +77,9 @@ histogram(~`New Total Steps`, data=sum_step_new, col = "grey", breaks = 20)
 <br>
 
 #####Mean of the total steps taken per day: 10766.19
+
 #####Median of the total steps taken per day: 10766.19
+
 #####Mean is the same, while median is different. The histogram looks more normalized
 
 <br>
