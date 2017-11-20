@@ -23,7 +23,7 @@ names(sum_step) <- c("Date", "Total Steps")
 histogram(~`Total Steps`, data=sum_step, col = "grey", breaks = 20)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
+![](https://github.com/bitaolc/RepData_PeerAssessment1/blob/master/PA1_template_files/unnamed-chunk-1-1.png)<!-- -->
 <br>
 
 ###3. Mean and median number of steps taken each day
