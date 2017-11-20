@@ -28,7 +28,7 @@ histogram(~`Total Steps`, data=sum_step, col = "grey", breaks = 20)
 
 ###3. Mean and median number of steps taken each day
 
-#####Mean of the total steps taken per day: 10766.19
+#####Mean of the total steps taken per day: 10766.19 (code automatically shows the result, please see the rmd code & caculation in the rmd file. Similarly for the following numbers. Thanks)
 
 #####Median of the total steps taken per day: 10765
 
