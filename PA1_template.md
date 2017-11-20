@@ -41,7 +41,7 @@ names(mean_step) <- c("Interval", "Average Steps")
 xyplot(`Average Steps` ~ Interval, data = mean_step, type = "l")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](https://github.com/bitaolc/RepData_PeerAssessment1/blob/master/PA1_template_files/unnamed-chunk-2-1.png)<!-- -->
 
 <br>
 
@@ -69,7 +69,7 @@ names(sum_step_new) <- c("Date", "New Total Steps")
 histogram(~`New Total Steps`, data=sum_step_new, col = "grey", breaks = 20)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](https://github.com/bitaolc/RepData_PeerAssessment1/blob/master/PA1_template_files/unnamed-chunk-3-1.png)<!-- -->
 <br>
 
 #####Mean of the total steps taken per day: 10766.19
@@ -92,6 +92,6 @@ names(mean_step_new) <- c("Interval","Day","Average steps")
 xyplot(`Average steps` ~ Interval |as.factor(Day), data = mean_step_new, type = "l", layout=c(1,NA))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](https://github.com/bitaolc/RepData_PeerAssessment1/blob/master/PA1_template_files/unnamed-chunk-4-1.png)<!-- -->
 
 #####The object is more active in general throughout the weekends and more active at specific period during weekdays.
